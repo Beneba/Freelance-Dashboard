@@ -1,0 +1,10 @@
+/**custom script for morris.js*/
+
+
+
+.panel-body {
+    padding: 9px;
+    margin: 54%;
+    margin-left: -2%;
+    margin-top: -4%
+}
