@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<title>Freelance Dashboard</title>
+
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+
+			<link rel="stylesheet" type="text/css" href="css/morris.css">
+			<script type="text/javascript" href="js/morris.min.js"></script>
+
+
+		   
+
+		    <!-- Morris Charts CSS -->
+		    <link href="css/plugins/morris.css" rel="stylesheet">
+
+			<!--
+			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+			<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+			<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+				-->
+	</head>
+
+			
+	<body>
+
+	<!-- left side bar-->
+	<div class="container">
+		<div class="row">
+			<div class=" col-sm-2 col-md-2 ">
+					
+						<ul class=" panel list-group">
+
+							<ol class="list-group-item"><a href="#"></a>
+							FREELANCER      <span class="glyphicon glyphicon-list"></span></ol>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-home"></span></a>
+							HOME</li>
+
+
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-search"></span></a>
+							Overview</li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-user"></span></a>
+							Members</li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-picture"></span></a>
+							Report <span class="badge">3</span></li>
+
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-list-alt"></span></a>
+							Schedule</li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+							Services<span class="badge">11</span></li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-bullhorn"></span></a>
+							Marketing</li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-wrench"></span></a>
+							Settings</li>
+
+							<li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-eye-open"></span></a>
+							View store</li>
+
+						</ul>
+			</div>
+
+			<div class="col-md-10 ">
+				
+					<div class=" panel panel-heading">
+								
+						<div class="row">
+							<div class="col-md-4">
+								<h3></h3>
+							</div>
+							<div class="col-md-4">
+										
+							<h3></h3>
+							</div>
+							<div class="col-md-4">
+
+										
+								<div class="dropdown">
+								            	 
+								 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img alt="" class="img-circle" src="img/thumb.png" >Zivile Zickute<b class="caret"></b></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+			
+
+				
+					<div class=" panel panel-heading">
+								
+						<div class="row">
+							<div class="col-md-4">
+								<h3></h3>
+							</div>
+							<div class="col-md-4">
+									
+								<p>Summary of This Month
+								<p>
+							</div>
+							<div class="col-md-4">
+									
+								<p> <span class="glyphicon glyphicon-list-alt"></span> 01/01/16-02.02/16
+								</p>
+							</div>
+						</div>
+								
+					</div>
+			
+								
+				
+
+				<div class="row">
+					<div class="col-sm-3 col-md-3">
+
+						<button class="btn btn-danger btn-sm text-btn"><h3> <span class="glyphicon glyphicon-usd"></span> <br>$9,587</h3> 
+						<p>INCOME</p>
+						<hr>
+						<p>The estimated  earnings</p>
+						</button>
+					</div>
+		                       
+					<div class="col-sm-3 col-md-3">
+	                     <button class="btn btn-info btn-sm text-btn"><h3> <span class="glyphicon glyphicon-cloud-download"></span> <br>1,543</h3> 
+						<p>DOWNLOADS</p>
+						<hr>
+						<p>Total downlaod for the week </p>
+						</button>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+	                    <button class="btn btn-warning btn-sm text-btn"><h3> <span class="glyphicon glyphicon-user"></span> <br>975</h3> 
+						<p>NEW VIEWS</p>
+						<hr>
+						<p>The estimated income earnings</p>
+						</button>
+					</div>
+
+					<div class="col-sm-3 col-md-3">
+						
+	                     <button class="btn btn-success btn-sm text-btn"><h3> <span class="glyphicon glyphicon-comment"></span><br>300</h3> 
+						<p>COMMENTS</p>
+						<hr>
+						<p>Comments on the latest </p>
+						</button>
+					</div>
+				</div>
+
+
+				
+				<!-- Live acrivity chart -->
+          		<div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> Activity Life Chart</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-area-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+			
+							
+							
+				
+					
+				<div class="container">
+
+					<div class="col-sm-4">
+						<div>
+							<h4>Activity Timeline</h4>
+							<br>
+						</div>
+						<div class="table">
+							<table border=" 0" style="width: 100%">
+
+								<tbody>
+									<tr>
+										<td><button class="btn btn-md btn-danger"> INCOME </button>
+										</td>
+										<td><h4>Online payment</h4><small>by Zaila Zackate</small></td>
+										<td><h4>$124</h4><small>10:10am</small></td>
+									</tr>
+								</tbody>
+									<tbody>
+									<tr>
+										<td><button class="btn btn-md btn-info"> DOWNLOADS </button>
+										</td>
+										<td><h4>Epic project paid</h4><small>by Creative Mind</small></td>
+										<td><h4>200GB</h4><small>11:30am</small></td>
+									</tr>
+								</tbody>
+
+									<tbody>
+									<tr>
+										<td><button class="btn btn-md btn-warning"> NOW VIEWS</button>
+										</td>
+										<td><h4>Photoshop Recourses</h4><small>Epic Project</small></td>
+										<td><h4>357</h4><small>12:15pm</small></td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+				</div>
+			
+
+					<!-- Table of Top Active members,Views,comments-->
+				<div class="container">
+					<div class="col-sm-5 col-md-5">
+						
+
+						<div class="table">
+							<table border=" 0" style="width: 80%">
+
+								<thead>
+									<tr>
+										<th>TOP Active Members</th>
+										<th>VIEWS</th>
+										<th>COMMENTS</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td><img src="img/images4.jpg"><h4> Bill S Kenney</h4>
+										<small>Avec Doctot</small></td>
+										<td>115</td>
+										<td>27</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td><img src="img/images.jpg"><h4> Creative Mints</h4>
+										<small>Creative greek</small></td>
+										<td>327</td>
+										<td>25</td>
+									</tr>
+								</tbody>
+								<tbody>
+
+									<tr>
+										<td><img src="img/images10.jpg"><h4>Creativedash</h4>
+										<small>Dragon Studio</small></td>
+										<td>1270</td>
+										<td>16</td>
+									</tr>
+								</tbody>
+								<tbody>
+									<tr>
+										<td><img src="img/boy.png"><h4> Justas Galabunda</h4><small>The discore</small></td>
+										<td>311</td>
+										<td>17</td>
+									</tr>
+									</tbody>
+									<tbody>
+									<tr>
+										<td><img src="img/boy2.png"><h4>Kirki Wallace</h4><small>Bandana</small></td>
+										<td>275</td>
+										<td>15</td>
+									</tr>
+									</tbody>
+									<tbody>
+									<tr>
+										<td><img src="img/boy3.png"><h4> Aaron Martinez</h4><small>Makers</small></td>
+										<td>177</td>
+										<td>9</td>
+									</tr>
+									</tbody>
+									<tbody>
+									<tr>
+										<td><img src="img/client2.png"><h4> Nick Kumbari</h4><small>Visual Designer</small></td>
+										<td>75</td>
+										<td>4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>								
+	</div>
+			
+		
+
+
+
+		 <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script>	
+			
+		
+
+</body>
+</html>
+
+
+
+
+
+
+
+				<!--
+
+
+
+			</div>
